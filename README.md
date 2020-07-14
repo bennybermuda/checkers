@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### `npm install`
 
-In the project directory, you can run:
+This will install all the dependencies it takes for the game to run locally.
 
 ### `npm start`
 
@@ -27,42 +27,33 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `Process`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+As a learning project, I wanted to see what it took to get a Checkers Game up and running in React. Given that I'm new to the Framework, I decided to build off of Gabriel Mioni's React Checkers App, which you can find here: <br />
+https://github.com/GabrielMioni/react-checkers <br />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app already came with many neat features such as: <br />
+-A computer player that optimizes for good moves <br />
+-An undo move button <br />
+-Move options displayed for your checker when clicked <br />
+-King status when you get pieces to the other side of the board <br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+However, there were some features that I felt was missing, such as: <br />
+-A restart option and displaying the number of moves inspired by Andrea C's React Checkers App: https://github.com/andreac92/react-checkers<br />
+-A landing screen that you can start the game from <br />
+-A more descriptive header that lets player know whose turn it is <br />
+-The rule that if your checker can eliminate another checker, it must do so if that's the checker you want to move, and there is the option to move into an empty space <br />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `What's Next`
 
-## Learn More
+And thus, what I have so far! While I've made progress, I'm far from over! Not only is there more learning about React to do, from learning how to pass variables from Child to Parent to working with Hooks, but there are also more features/changes I want to add, such as: <br />
+-More documentation, to further both your understanding and mine
+-Home button using React Router -- allowing the player to go back to the landing screen <br />
+-Victory/Defeat Banner -- right now, you see a message at the top and cannot make anymore moves -- I want to provide the option to go Home or Restart with the Banner <br />
+-Choose who starts -- give the player the option to either start or have the computer open <br />
+-Have the computer make a move for itself if Undone -- right now, you have to make a move for the computer if you Undo its last move <br />
+-Current Tile Hover -- make the tile the mouse is over glow! <br />
+-Checker Options on Hover <br />
+-Drag and Drop Functionality with the Checkers <br />
+-Make the App more visually appealing <br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
