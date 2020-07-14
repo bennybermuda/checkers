@@ -40,7 +40,7 @@ The app already came with many neat features such as: <br />
 
 However, there were some features that I felt was missing, such as: <br />
 -A restart option and displaying the number of moves inspired by Andrea C's React Checkers App: https://github.com/andreac92/react-checkers<br />
--A landing screen that you can start the game from <br />
+-A landing screen that you can start the game from -- Drew inspiration from something I played around with in CodeSandbox: https://codesandbox.io/s/happy-borg-63259?file=/src/login.js <br />
 -A more descriptive header that lets player know whose turn it is <br />
 -The rule that if your checker can eliminate another checker, it must do so if that's the checker you want to move, and there is the option to move into an empty space <br />
 
