@@ -52,7 +52,7 @@ And thus, what I have so far! While I've made progress, I'm far from over! Not o
 -Home button -- allowing the player to go back to the landing screen [ADDED 7/16/20] <br />
 -Victory/Defeat Banner -- right now, you see a message at the top and cannot make anymore moves -- I want to provide the option to go Home or Restart with the Banner <br />
 -Choose who starts -- give the player the option to either start or have the computer open <br />
--Have the computer make a move for itself if Undone -- right now, you have to make a move for the computer if you Undo its last move <br />
+-Have the computer make a move for itself if Undone -- right now, you have to make a move for the computer if you Undo its last move [ADDED 7/16/20] <br />
 -Current Checker Hover -- make the checker the mouse is over glow (as long as its your own)! [ADDED 7/16/20] <br />
 -Checker Options on Hover [ADDED 7/16/20] <br />
 -Drag and Drop Functionality with the Checkers <br />
