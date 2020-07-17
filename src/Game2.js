@@ -121,12 +121,13 @@ export class Game extends React.Component {
         const currentState = this.getCurrentState();
         const boardState = currentState.boardState;
         const clickedSquare = boardState[coordinates];
+        console.log(coordinates)
 
         // Clicked on a piece
         if (clickedSquare !== null) {
 
-            // Can't select opponents pieces
-            if (clickedSquare.player !== returnPlayerName(currentState.currentPlayer)) {
+            // Can't select computer pieces
+            if (clickedSquare.player === 'player2') {
                 return;
             }
 
