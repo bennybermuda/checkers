@@ -18,6 +18,7 @@ function Square(props) {
 export default class Board extends React.Component {
 
     renderSquare(coordinates, squareClasses) {
+        const dragHandlers = {onStart: this.onStart, onStop: this.onStop};
         return (
             <Draggable>
                 <Square
@@ -57,7 +58,7 @@ export default class Board extends React.Component {
             squareClasses.push(colorClass);
 
             if (this.props.activePiece === coordinates) {
-                //console.log('hovered over active')
+                
                 squareClasses.push('isActive');
             }
 

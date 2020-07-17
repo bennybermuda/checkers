@@ -31,6 +31,9 @@ export class Opponent extends ReactCheckers {
         return computerMoves;
     }
 
+    //basically calculates score for each computer checker based on the 
+    //number of moves and the number of kill moves it has --- the one with
+    //the highest score gets chosen to move during the computer turn
     getSmartMove(state, boardState, player) {
         const computerMoves = this.getComputerMoves(boardState, player);
 

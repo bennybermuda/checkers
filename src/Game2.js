@@ -113,7 +113,7 @@ export class Game extends React.Component {
     }
 
     handleHoverOn(coordinates) {
-        //console.log("handle click/hover event")
+        
         if (this.state.winner !== null) {
             return;
         }

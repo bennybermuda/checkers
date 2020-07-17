@@ -158,6 +158,7 @@ export class ReactCheckers {
         let setCurrentPlayer = player === 'player2';
         let setActivePiece = null;
 
+        //basically gives player/computer another turn if they eliminated a checker in the last turn
         if (jumpArray.indexOf(coordinates) > -1) {
             let opponentPosition = utils.getKeyByValue(state.jumpKills, coordinates);
             boardState[opponentPosition] = null;
@@ -180,6 +181,7 @@ export class ReactCheckers {
             }
         }
 
+        //updates board state after all possible moves are made in a turn
         let stateOut = {};
 
         stateOut.boardState = boardState;
@@ -205,6 +207,7 @@ export class ReactCheckers {
         return ( (row === 1 && player === 'player1') || (row === 8 && player === 'player2') );
     }
 
+    //keeps track of when a player's possible moves/pieces left is 0 -- the win state for the other player
     evaluateWinner(boardState) {
 
         let player1Pieces = 0;
