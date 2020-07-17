@@ -38,7 +38,7 @@ The app already came with many neat features such as: <br />
 -Move options displayed for your checker when clicked <br />
 -King status when you get pieces to the other side of the board <br />
 
-However, there were some features that I felt was missing, such as: <br />
+However, there were some features that I felt was missing and thus added, such as: <br />
 -A restart option and displaying the number of moves inspired by Andrea C's React Checkers App: https://github.com/andreac92/react-checkers<br />
 -A landing screen that you can start the game from -- Drew inspiration from something I played around with in CodeSandbox: https://codesandbox.io/s/happy-borg-63259?file=/src/login.js <br />
 -A more descriptive header that lets player know whose turn it is <br />
