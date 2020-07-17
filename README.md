@@ -49,11 +49,11 @@ However, there were some features that I felt was missing, such as: <br />
 And thus, what I have so far! While I've made progress, I'm far from over! Not only is there more learning about React to do, from learning how to pass variables from Child to Parent to working with Hooks, but there are also more features/changes I want to add, such as: <br />
 -Rebuild checkers from scratch -- I was able to refine it, what's next is to build it from Ground Zero and have greater control over the structure/components <br />
 -More documentation, to further both your understanding and mine <br />
--Home button using React Router -- allowing the player to go back to the landing screen <br />
+-Home button -- allowing the player to go back to the landing screen [ADDED 7/16/20] <br />
 -Victory/Defeat Banner -- right now, you see a message at the top and cannot make anymore moves -- I want to provide the option to go Home or Restart with the Banner <br />
 -Choose who starts -- give the player the option to either start or have the computer open <br />
 -Have the computer make a move for itself if Undone -- right now, you have to make a move for the computer if you Undo its last move <br />
--Current Tile Hover -- make the tile the mouse is over glow! <br />
+-Current Checker Hover -- make the checker the mouse is over glow (as long as its your own)! [ADDED 7/16/20] <br />
 -Checker Options on Hover [ADDED 7/16/20] <br />
 -Drag and Drop Functionality with the Checkers <br />
 -Make the App more visually appealing <br />
