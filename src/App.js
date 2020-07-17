@@ -11,7 +11,7 @@ function App() {
     <div className="App">
 
         {!gameStarted && <Landing onStart={() => setGameStarted(true)}/>}
-        {!!gameStarted && <Game/>}
+        {!!gameStarted && <Game onStart={() => setGameStarted(false)}/>}
 
     </div> 
   );

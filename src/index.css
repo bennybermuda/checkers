@@ -96,6 +96,17 @@ code {
   cursor: pointer;
 }
 
+.home {
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: none;
+  border: 3px solid #deb887;
+  margin: 5px;
+  cursor: pointer;
+}
+
 .undo.disabled {
   cursor: not-allowed;
   opacity: .4;

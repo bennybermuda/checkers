@@ -130,16 +130,6 @@ export class Game extends React.Component {
                 return;
             }
 
-            // Unset active piece if it's clicked
-            if (this.state.activePiece === coordinates && this.state.hasJumped === null) {
-                this.setState({
-                    activePiece: null,
-                    moves: [],
-                    jumpKills: null,
-                });
-                return;
-            }
-
             // Can't choose a new piece if player has already jumped.
             if (this.state.hasJumped !== null && boardState[coordinates] !== null) {
                 return;
@@ -302,7 +292,7 @@ export class Game extends React.Component {
         let currPlayer;
 
         let undoClass = 'undo';
-      
+        let homeClass = 'home';
         let restartClass = 'restart';
 
         if (this.state.stepNumber < 1) {
@@ -354,10 +344,9 @@ export class Game extends React.Component {
                     
                     <div className="time-travel">
                         <p className="movenum"><b>Number of Moves: {this.state.stepNumber}</b></p>
-                        
+                        <button className ={homeClass} onClick={this.props.onStart}>Home</button>
                         <button className={restartClass} onClick={()=>this.restart()}>Restart</button>
                         <button className={undoClass} onClick={()=>this.undo()}>Undo</button>
-                        
                     </div>
                 </div>
            
