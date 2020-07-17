@@ -54,7 +54,7 @@ And thus, what I have so far! While I've made progress, I'm far from over! Not o
 -Choose who starts -- give the player the option to either start or have the computer open <br />
 -Have the computer make a move for itself if Undone -- right now, you have to make a move for the computer if you Undo its last move <br />
 -Current Tile Hover -- make the tile the mouse is over glow! <br />
--Checker Options on Hover <br />
+-Checker Options on Hover [ADDED 7/16/20] <br />
 -Drag and Drop Functionality with the Checkers <br />
 -Make the App more visually appealing <br />
 
