@@ -268,6 +268,11 @@ export class Game extends React.Component {
             stepNumber: backStep,
             winner: null,
         });
+
+        //if we unset to the computer's turn, we want it to make another move on its own
+        if (unsetHistory.currentPlayer !== true){
+            this.computerTurn();
+        }
         
         
     }
