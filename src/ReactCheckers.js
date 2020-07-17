@@ -96,7 +96,7 @@ export class ReactCheckers {
                 continue;
             }
 
-            if (boardState[cornerCoordinates2] === null && jumps.length == 0){
+            if (boardState[cornerCoordinates2] === null && jumps.length === 0){
                 moves.push(cornerCoordinates2);
             }
         }

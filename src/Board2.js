@@ -4,10 +4,13 @@ import * as utils from './utils.js';
 function Square(props) {
 
     const squareClasses = props['squareClasses'];
-    const onClick = props['onClick'];
+    //const onClick = props['onClick'];
+    const onMouseEnter = props['onMouseEnter'];
+    const onMouseLeave = props['onMouseLeave'];
 
     return (
-        <button className = { "square " + (squareClasses) } onClick={onClick} />
+        //<button className = { "square " + (squareClasses) } onClick={onClick} />
+        <button className = { "square " + (squareClasses) } onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
     );
 }
 
@@ -18,8 +21,9 @@ export default class Board extends React.Component {
             <Square
                 key = {coordinates}
                 squareClasses = {squareClasses}
-                onClick = {() => this.props.onClick(coordinates) }
-
+                //onClick = {() => this.props.onClick(coordinates) }
+                onMouseEnter = {() => this.props.onMouseEnter(coordinates)}
+                onMouseLeave = {() => this.props.onMouseLeave(coordinates)}
             />
         );
     }

@@ -98,7 +98,21 @@ export class Game extends React.Component {
         return history[history.length - 1];
     }
 
-    handleClick(coordinates) {
+    handleHoverOff(coordinates) {
+        // Unset active piece if it's clicked
+        if (this.state.activePiece === coordinates && this.state.hasJumped === null) {
+            this.setState({
+                activePiece: null,
+                moves: [],
+                jumpKills: null,
+            });
+            return;
+        }
+        
+        
+    }
+
+    handleHoverOn(coordinates) {
         //console.log("handle click/hover event")
         if (this.state.winner !== null) {
             return;
@@ -331,9 +345,9 @@ export class Game extends React.Component {
                             activePiece = {activePiece}
                             moves = {moves}
                             columns = {columns}
-                            onClick = {(coordinates) => this.handleClick(coordinates)}
-                            //onMouseEnter={(coordinates) => this.handleHover(coordinates, true)}
-                            //onMouseLeave={(coordinates) => this.handleHover(coordinates, false)}
+                            //onClick = {(coordinates) => this.handleClick(coordinates)}
+                            onMouseEnter={(coordinates) => this.handleHoverOn(coordinates, true)}
+                            onMouseLeave={(coordinates) => this.handleHoverOff(coordinates, false)}
                             
                         />
                     </div>
